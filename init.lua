@@ -17,8 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  -- colorscheme = "astrodark",
-  -- colorscheme = "catppuccin",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -74,21 +73,6 @@ return {
       },
     },
   },
-
-  -- set transparent neovim
-  transparent = {
-    groups = { -- table: default groups
-      'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
-      'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
-      'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
-      'SignColumn', 'CursorLineNr', 'EndOfBuffer',
-    },
-    extra_groups = {
-      "NormalFloat",     -- plugins which have float panel such as Lazy, Mason, LspInfo
-      "NvimTreeNormal"   -- NvimTree
-    },                   -- table: additional groups that should be cleared
-    exclude_groups = {}, -- table: groups you don't want to clear
-  },
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
@@ -106,4 +90,5 @@ return {
     --   },
     -- }
   end,
+
 }
